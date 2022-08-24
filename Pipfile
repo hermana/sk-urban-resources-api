@@ -1,0 +1,23 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+pytest = "*"
+flask = "2.1"
+flasgger = "*"
+requests = "*"
+flask-caching = "*"
+gunicorn = "*"
+flask-cors = "*"
+
+[dev-packages]
+black = "*"
+pytest-cov = "*"
+
+[requires]
+python_version = "3.9"
+
+[scripts]
+tests = "pytest --cov=flaskr tests/"
